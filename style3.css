@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de)
+}
+
+h1
+{
+    padding: 100px 0;
+    margin: 10px;
+    font-size: 45px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+h2
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#2b1055;
+    font-size: 24px;
+    margin: 20px;
+    padding: 5px 0;
+}
+h3
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#2b1055;
+    font-size: 24px;
+    margin: 20px;
+    padding: 5px 0;
+}
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2b1055;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -45px;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight:  700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+}
+header ul li a:hover
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+.container{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;   
+    width: 300px;
+    background: #fff;
+    padding: 70px 30px 10px;
+    margin-top: 10px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1)
+}
+
+.container .box:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7597de;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.container .box:hover:before
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.container .box h2
+{
+position: absolute;
+left: 40px ;
+top: 60px;
+font-size: 3em;
+font-weight: 800;
+z-index: 1;
+opacity: 0.2;
+transition: 0.5s;
+}
+
+.container .box:hover h2
+{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+
+}
+
+.container .box h3
+{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+}
+
+.container .box:hover h3,
+.container .box:hover p
+{
+color: #fff;
+}
+
+.container .box p
+{
+    position: relative;
+    z-index: 2;
+    color: #555;
+    transition: 0.5s;
+}
+
+
+
+span
+{
+    color:rgb(174, 64, 253)
+}
+.Amarillo
+{
+    color:goldenrod;
+}
+.Morado
+{   
+    color:rgb(124, 36, 161)
+}
+
+footer 
+{
+    text-align: center;   
+}
+

@@ -2,80 +2,154 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-footer {
+footer 
+{
     text-align: center;   
 }
-h1{
-    font-weight: 400;
-    padding: 20px 0;
-    font-size: 40px;
+
+h1
+{
+    padding: 100px 0;
+    margin: 10px;
+    font-size: 45px;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: darkmagenta
+    color: #fff;
 }
-h2{
+h2
+{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:darkslateblue;
+    color:#fff;
     font-size: 25px;
+    margin: 10px;
     padding: 20px 0;
 }
-body{
-    background-color:antiquewhite
-}
-ul {
 
-     display:contents;
-     font-style: italic;
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size:medium;
-    text-align: center;
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:aliceblue;
 }
-li{
-    text-align: center;
-    color:darkslateblue;   
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de)
 }
 
-label{
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -45px;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo
+{   
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 11px;
+
+    color: #fff;
+}
+header ul li a:hover
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+li
+{
+    margin: 20px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+label
+{
     padding: 10px ;
 }
     
 button{
    margin: 10px;
 }
-footer{
+footer
+{
     text-align: center;
     padding: 20px;
 }
-textarea{
+textarea
+{
     margin: 10px;
 }
-span{
+span
+{
     color:rgb(174, 64, 253)
 }
-.Amarillo{
+.Amarillo
+{
     color:goldenrod;
 }
-.Morado{   
+.Morado
+{   
     color:rgb(124, 36, 161)
 }
 
-.Contacto{
+.Contacto
+{
+    color: #fff;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
 }
+
 
 /*Esto es un agregado para la Galeria*/
 
 /*Agrego una linea debajo del texto Galeria, para hacer una separacion*/
-.linea{
-    background-color: darkmagenta;
+.linea
+{
+    background-color: rgb(107, 71, 236);
     height: 5px;
     width: 100%;
     display: block;
 }
 
+
+
 /*Columnas y tamaño*/
-.galeria{
+.galeria
+{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 95%;
@@ -86,12 +160,19 @@ span{
 }
 
 /*Acá setteo tamaño, altura y la animacion cuando paso por arriba el mouse sobre las imagenes*/
-.galeria img{
+.galeria img
+{
     width: 100%;
     vertical-align: top;
     height: 350px;
     object-fit: cover;
     transition: transform 0.5s;
+    
+    border: 10px solid rgb(107, 71, 236);
+    border-radius: 5%;
+    padding: 40px;
+
+
 }
 
 .galeria video{
@@ -100,6 +181,10 @@ span{
     height: 350px;
     object-fit: cover;
     transition: transform 0.5s;
+
+    border: 8px solid rgb(107, 71, 236);
+    border-radius: 5%;
+    padding: 40px;
 }
 .galeria a:hover video{
     filter: blur(2px);
@@ -117,6 +202,8 @@ span{
 .galeria a:hover img{
     filter: blur(2px);
     transform: rotate(10deg) scale(1.3);
+
+    
 }
 
 
